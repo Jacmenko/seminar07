@@ -24,15 +24,19 @@ jobs:
           dotnet-version: '8.0.400'
 
       - name: Restore dependencies
-        run: dotnet restore
+        run: |
+        cd Seminar07
+        dotnet restore
 
       - name: Build the project
-        run: dotnet publish -c Release -o output
+        run: |
+        cd Seminar07
+        dotnet publish -c Release -o output
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
-          path: Seminar07/wwwroot
+          path: output/wwwroot
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4.0.5
