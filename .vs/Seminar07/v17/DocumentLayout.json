@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lukas\\Desktop\\muni\\Mgr\\semester_2\\software_quality\\Seminar07\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD56EF39-8164-4E14-8E89-3F4F876DDD1A}|Seminar07\\Seminar07.csproj|c:\\users\\lukas\\desktop\\muni\\mgr\\semester_2\\software_quality\\seminar07\\seminar07\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FD56EF39-8164-4E14-8E89-3F4F876DDD1A}|Seminar07\\Seminar07.csproj|solutionrelative:seminar07\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\lukas\\Desktop\\muni\\Mgr\\semester_2\\software_quality\\Seminar07\\Seminar07\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Seminar07\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\lukas\\Desktop\\muni\\Mgr\\semester_2\\software_quality\\Seminar07\\Seminar07\\wwwroot\\index.html",
+              "RelativeToolTip": "Seminar07\\wwwroot\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-04-01T17:01:45.889Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
