@@ -27,10 +27,14 @@ jobs:
         dotnet-version: '8.0.400'
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: |
+        cd Seminar07
+        dotnet restore
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish Seminar07/Seminar07.csproj -c Release -o publish
+      run: |
+        cd Seminar07
+        dotnet publish Seminar07/Seminar07.csproj -c Release -o publish
