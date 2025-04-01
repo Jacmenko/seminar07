@@ -37,4 +37,4 @@ jobs:
     - name: Publish
       run: |
         cd Seminar07
-        dotnet publish Seminar07/Seminar07.csproj -c Release -o publish
+        dotnet publish Seminar07.csproj -c Release -o publish
