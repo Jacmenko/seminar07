@@ -27,14 +27,20 @@ jobs:
         dotnet-version: '8.0.400'
 
     - name: Restore dependencies
-      run: |
-        cd Seminar07
-        dotnet restore
+      run: dotnet restore
 
     - name: Build
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish
-      run: |
-        cd Seminar07
-        dotnet publish Seminar07.csproj -c Release -o publish
+      run: dotnet publish Seminar07/Seminar07.csproj -c Release -o publish
+
+    - name: Add .nojekyll (important for Blazor on GitHub Pages)
+      run: echo "" > publish/wwwroot/.nojekyll
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./publish/wwwroot
+        publish_branch: gh-pages
