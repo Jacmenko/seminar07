@@ -16,27 +16,27 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '8.0.400'
 
       - name: Restore dependencies
         run: |
-        cd Seminar07
-        dotnet restore
+          cd Seminar07
+          dotnet restore
 
       - name: Build the project
         run: |
-        cd Seminar07
-        dotnet publish -c Release -o output
+          cd Seminar07
+          dotnet publish -c Release -o output
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v3.0.1
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: output/wwwroot
+          path: Seminar07/output/wwwroot
 
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4.0.5
+        uses: actions/deploy-pages@v4
