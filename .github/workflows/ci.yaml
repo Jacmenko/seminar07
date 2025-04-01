@@ -33,4 +33,4 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish
-      run: dotnet publish Seminar07/Seminar07/Seminar07.csproj -c Release -o publish
+      run: dotnet publish Seminar07/Seminar07.csproj -c Release -o publish
